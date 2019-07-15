@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos.controller.TagMenuController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TableView fx:id="tableView" layoutX="43.0" layoutY="32.0" prefHeight="337.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="tagName" prefWidth="99.0" resizable="false" text="Tag Name" />
+                  <TableColumn fx:id="tagValue" prefWidth="100.0" resizable="false" text="Tag Value" />
+              </columns>
+            </TableView>
+            <Button fx:id="deleteButton" layoutX="284.0" layoutY="115.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="67.0" prefWidth="139.0" text="Delete">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="284.0" layoutY="223.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="67.0" prefWidth="139.0" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
